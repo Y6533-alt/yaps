@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YAPS | בניית אתרים לעסקים בכל הארץ</title>
+<meta name="description" content="YAPS בונה לעסקים דפי נחיתה, אתרי תדמית וחנויות אונליין, מותאמים לנייד ומוכנים לגוגל. שירות בכל הארץ. הצעת מחיר אישית: 050-748-2888.">
+<link rel="canonical" href="https://y6533-alt.github.io/yaps/">
+<meta property="og:url" content="https://y6533-alt.github.io/yaps/">
+<meta property="og:title" content="YAPS | בניית אתרים לעסקים בכל הארץ">
+<meta property="og:description" content="דפי נחיתה, אתרי תדמית וחנויות אונליין לעסקים בכל הארץ.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="he_IL">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "YAPS",
+  "description": "בניית דפי נחיתה, אתרי תדמית וחנויות אונליין לעסקים",
+  "telephone": "+972507482888",
+  "areaServed": { "@type": "Country", "name": "Israel" }
+}
+</script>
+<style>
+:root {
+  --paper: #f6f3ec;
+  --surface: #fffdf8;
+  --ink: #16150f;
+  --muted: #5c584c;
+  --line: #dcd6c8;
+  --accent: #c8f031;
+  --accent-dark: #b2d926;
+  --radius: 14px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Rubik", system-ui, "Segoe UI", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+a { color: inherit; }
+a:focus-visible, summary:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; border-radius: 6px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+section { padding: 80px 0; }
+h1, h2, h3 { margin: 0; line-height: 1.12; }
+h2 { font-size: clamp(30px, 4.5vw, 46px); font-weight: 900; margin-bottom: 40px; }
+h3 { font-size: 22px; font-weight: 700; }
+p { margin: 0; }
+
+header { border-bottom: 1px solid var(--line); }
+.bar { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+.logo { font-weight: 900; font-size: 26px; letter-spacing: .02em; text-decoration: none; }
+.logo span { background: var(--accent); padding: 0 8px; border-radius: 6px; }
+.tel { font-weight: 500; text-decoration: none; direction: ltr; unicode-bidi: isolate; }
+.tel:hover { text-decoration: underline; }
+
+.hero { padding: 72px 0 88px; }
+.hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: center; }
+.hero h1 { font-size: clamp(40px, 6.6vw, 76px); font-weight: 900; letter-spacing: -.01em; }
+.hero h1 mark { background: var(--accent); color: inherit; padding: 0 .14em; border-radius: 8px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.lead { margin-top: 24px; font-size: 21px; color: var(--muted); max-width: 34em; }
+.cta-row { margin-top: 34px; display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: center; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 56px; padding: 0 32px;
+  background: var(--accent); color: var(--ink);
+  border: 2px solid var(--ink); border-radius: var(--radius);
+  font-weight: 700; font-size: 19px; text-decoration: none;
+  box-shadow: 4px 4px 0 var(--ink);
+  transition: transform .12s, box-shadow .12s, background .12s;
+}
+.btn:hover { background: var(--accent-dark); transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--ink); }
+.link { font-weight: 500; }
+
+.mock {
+  background: var(--surface); border: 2px solid var(--ink); border-radius: var(--radius);
+  box-shadow: 8px 8px 0 var(--ink); overflow: hidden;
+}
+.mock-top { display: flex; gap: 6px; padding: 12px 14px; border-bottom: 2px solid var(--ink); }
+.mock-top i { width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--ink); }
+.mock-body { padding: 24px 22px 28px; display: grid; gap: 12px; }
+.b { display: block; height: 14px; border-radius: 4px; background: var(--line); }
+.b.big { height: 30px; width: 82%; background: var(--ink); }
+.b.m { width: 92%; }
+.b.s { width: 64%; }
+.b.go { height: 40px; width: 46%; background: var(--accent); border: 2px solid var(--ink); margin-top: 6px; }
+.tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 10px; }
+.tiles span { aspect-ratio: 1; border-radius: 8px; background: var(--paper); border: 2px solid var(--line); }
+
+.light { background: var(--surface); border-block: 1px solid var(--line); }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 30px 26px; }
+.card p { margin-top: 12px; color: var(--muted); }
+
+.checks { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 48px; }
+.checks li { padding: 20px 0; border-top: 1px solid var(--line); }
+.checks strong { display: block; font-size: 20px; }
+.checks span { color: var(--muted); }
+
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; counter-reset: s; }
+.steps li { counter-increment: s; }
+.steps li::before {
+  content: counter(s); display: flex; align-items: center; justify-content: center;
+  width: 48px; height: 48px; margin-bottom: 18px;
+  background: var(--accent); border: 2px solid var(--ink); border-radius: 50%;
+  font-weight: 900; font-size: 20px;
+}
+.steps p { margin-top: 10px; color: var(--muted); }
+
+details { border-top: 1px solid var(--line); padding: 20px 0; max-width: 780px; }
+details:last-child { border-bottom: 1px solid var(--line); }
+summary { cursor: pointer; font-weight: 700; font-size: 20px; }
+details p { margin-top: 12px; color: var(--muted); }
+
+.final { background: var(--ink); color: var(--paper); text-align: center; }
+.final h2 { margin-bottom: 16px; }
+.final p { color: #cfcabd; margin-bottom: 32px; }
+.final .btn { box-shadow: none; border-color: var(--accent); }
+.final .btn:hover { transform: none; }
+.final a:focus-visible { outline-color: var(--paper); }
+
+footer { padding: 28px 0; font-size: 15px; color: var(--muted); }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+
+.sticky { display: none; }
+
+@media (max-width: 860px) {
+  section { padding: 60px 0; }
+  .hero { padding: 40px 0 60px; }
+  .hero-grid, .cards, .checks, .steps { grid-template-columns: 1fr; }
+  .mock { display: none; }
+  .lead { font-size: 19px; }
+  body { padding-bottom: 88px; }
+  .hero .btn { width: 100%; }
+  .sticky {
+    display: block; position: fixed; inset: auto 0 0 0; z-index: 10;
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+    background: var(--surface); border-top: 2px solid var(--ink);
+  }
+  .sticky .btn { width: 100%; box-shadow: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn { transition: none; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="YAPS, לראש העמוד"><span>YAPS</span></a>
+    <a class="tel" href="tel:+972507482888">050-748-2888</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>העסק שלך צריך אתר <mark>שעובד בשבילו</mark></h1>
+        <p class="lead">YAPS בונה לעסקים דפי נחיתה, אתרי תדמית וחנויות אונליין. נראה טוב בנייד, ברור ללקוחות ומוכן לגוגל. בכל הארץ.</p>
+        <div class="cta-row">
+          <a class="btn" href="https://wa.me/972507482888?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%91%D7%A0%D7%99%D7%99%D7%AA%20%D7%90%D7%AA%D7%A8%20%D7%9C%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99">לקבלת הצעת מחיר בוואטסאפ</a>
+          <a class="link" href="#services">מה אפשר לבנות?</a>
+        </div>
+      </div>
+      <div class="mock" aria-hidden="true">
+        <div class="mock-top"><i></i><i></i><i></i></div>
+        <div class="mock-body">
+          <span class="b big"></span>
+          <span class="b m"></span>
+          <span class="b s"></span>
+          <span class="b go"></span>
+          <div class="tiles"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="light" id="services">
+    <div class="wrap">
+      <h2>מה בונים ב-YAPS</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>דף נחיתה</h3>
+          <p>עמוד אחד עם מסר אחד ופעולה אחת ברורה. מתאים לשירות מסוים, למבצע או לקמפיין.</p>
+        </article>
+        <article class="card">
+          <h3>אתר תדמית</h3>
+          <p>הבית של העסק ברשת: מי אתם, מה אתם מציעים ואיך יוצרים איתכם קשר.</p>
+        </article>
+        <article class="card">
+          <h3>חנות אונליין</h3>
+          <p>קטלוג מוצרים ותהליך הזמנה פשוט, כדי שאפשר יהיה לקנות מכם גם מהטלפון.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>מה מקבלים בכל אתר</h2>
+      <ul class="checks">
+        <li><strong>התאמה מלאה לנייד</strong><span>האתר נוח לקריאה ולשימוש גם במסך קטן.</span></li>
+        <li><strong>עיצוב לפי העסק שלך</strong><span>הצבעים, התוכן והסגנון נבנים סביב העסק.</span></li>
+        <li><strong>בסיס טוב לגוגל</strong><span>כותרות, תיאורים ומבנה שעוזרים לגוגל להבין את האתר.</span></li>
+        <li><strong>דרך קלה ליצור קשר</strong><span>כפתור וואטסאפ, טלפון או טופס, במקום שקל למצוא.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="light">
+    <div class="wrap">
+      <h2>איך זה עובד</h2>
+      <ol class="steps">
+        <li><h3>מדברים</h3><p>מספרים מה העסק עושה ומה האתר צריך להשיג, ומקבלים הצעת מחיר אישית.</p></li>
+        <li><h3>בונים</h3><p>YAPS בונה את האתר ומראה לכם אותו, ואתם אומרים מה לשנות.</p></li>
+        <li><h3>עולים לאוויר</h3><p>אחרי האישור שלכם האתר מתפרסם ברשת, ולקוחות יכולים להגיע אליו.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>שאלות נפוצות</h2>
+      <details>
+        <summary>כמה עולה אתר?</summary>
+        <p>המחיר תלוי בסוג האתר ובהיקף שלו, ולכן כל עסק מקבל הצעת מחיר אישית אחרי שיחה קצרה.</p>
+      </details>
+      <details>
+        <summary>כמה זמן זה לוקח?</summary>
+        <p>זה תלוי בגודל האתר ובכמה תוכן כבר מוכן. תקבלו הערכת זמן יחד עם הצעת המחיר.</p>
+      </details>
+      <details>
+        <summary>העסק שלי לא באזור שלכם. זו בעיה?</summary>
+        <p>לא. העבודה נעשית מרחוק, בטלפון ובוואטסאפ, עם עסקים מכל הארץ.</p>
+      </details>
+      <details>
+        <summary>אין לי עדיין טקסטים ותמונות. אפשר להתחיל?</summary>
+        <p>כן. אפשר להתחיל בשיחה, ויחד נבין מה צריך להכין ומה חסר.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <h2>רוצים אתר לעסק?</h2>
+      <p>שלחו הודעה, ספרו בכמה מילים על העסק ותקבלו הצעת מחיר.</p>
+      <a class="btn" href="https://wa.me/972507482888?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%91%D7%A0%D7%99%D7%99%D7%AA%20%D7%90%D7%AA%D7%A8%20%D7%9C%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99">לדבר עם YAPS בוואטסאפ</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>YAPS, בניית אתרים לעסקים בכל הארץ</span>
+    <a class="tel" href="tel:+972507482888">050-748-2888</a>
+  </div>
+</footer>
+
+<div class="sticky">
+  <a class="btn" href="https://wa.me/972507482888?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%91%D7%A0%D7%99%D7%99%D7%AA%20%D7%90%D7%AA%D7%A8%20%D7%9C%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99">הצעת מחיר בוואטסאפ</a>
+</div>
+
+</body>
+</html>
